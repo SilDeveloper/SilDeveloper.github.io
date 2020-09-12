@@ -1,0 +1,207 @@
+html, body
+{
+  margin: 0px;
+  text-align: center;
+  color: black;
+  border:0px;
+}
+
+header
+{
+  background-color:black;
+  color: white;
+  height: 60px; /*60px */
+  width: 100%;
+  position: fixed;
+  z-index: 10; /* Sobrepõe  */
+  padding: 20px 15px 5px 10px; /* Baixo ,Direita, Cima, Esquerda */
+  flex-direction:row;
+}
+
+#menu
+{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    top: 0px;
+    margin-top: 0px;
+}
+
+li
+{
+  float: left;
+  padding: 25px 15px 20px 15px; /* Baixo ,Direita, Cima, Esquerda */
+  border: 1px;
+}
+
+li:hover /* Quando passar o mouse  */
+{
+    background-color: #F3752B;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color:#D3D0CB;
+    border-width: 1px;
+}
+
+#imagem_fundo
+{
+  background: url("https://img.freepik.com/fotos-gratis/quadro-escuro_28629-1306.jpg?size=626&ext=jpg");
+  height: 100%;
+  text-align: center;
+  background-size: cover; /* para de duplicar a img de fundo */
+}
+
+#titulo
+{
+    color: white;
+    padding-top: 20%;
+    font-size: 70px;
+    font-style: oblique;
+    line-height: 0.6;
+}
+
+#subtitulo
+{
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px  black;
+    font-style: oblique;
+    
+}
+
+#acao 
+{
+    color: white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+    background-color: #FF7D00;
+    border-radius: 5%;
+}
+
+.icone
+{
+    width: 51px; 
+    /* Tamanho da imagem */
+}
+
+section
+{
+    padding: 20px;
+    float: left;
+    background-color:#FF7D00;
+    color: white;
+}
+
+.destaque
+{
+    /* Projeto */
+    background-color:#252627;
+    color: white;
+}
+
+#content{
+    
+    background-color:#252627;
+    color: white;
+    width:100%;
+}
+
+.imgexplo
+{
+    width: 100%;
+    padding-left:5%;
+    height: 40%;
+
+}
+
+.sobre
+{
+    background-color:#F3752B;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px;
+    font-style: oblique;
+}
+
+.coluna
+{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+}
+
+.dois
+{
+    /* width: 29%; */
+    padding: 0 2%;
+    text-align: center; 
+    
+}
+
+.centralizado
+{
+    text-align: center;
+}
+
+footer
+{
+    background-color:#252627;
+    float: left;
+    width: 100%;
+    height: 30%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    text-shadow: 1px 1px;
+    
+}
+
+@media all and (max-width: 800px)
+{
+
+    #menu
+    {
+        visibility: hidden;
+    }
+
+    .coluna
+    {
+       display: block;
+       width: 80%;
+       padding: 0;
+       margin: 10px auto;
+       float: none;
+    }
+
+    .imgexplo
+    {
+      width: 100%;
+      height: 40%;
+      padding-right: 15%;
+      padding-left: 0%;
+    }
+
+    #content
+    {
+        margin:1px;
+        border:1px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #imagem_fundo
+    {
+        padding: 15px 10px 1px 10px;
+        border: 0px;
+    }
+
+    header
+    {
+        padding: 0px 50px 110px 10px; /* Baixo ,Direita, Cima, Esquerda */
+        float: left;
+        height: 1px;
+    }
+
+}
